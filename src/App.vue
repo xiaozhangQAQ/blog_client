@@ -27,6 +27,7 @@ import mHeader from '@/components/mHeader/mHeader'
 import mFooter from '@/components/mFooter/mFooter'
 
 import ResizeMixin from '@/mixins/ResizeHandler.js'
+import {login} from '@/api/home.js'
 
 export default {
   name:'app',
@@ -47,6 +48,9 @@ export default {
   },
   mixins: [ResizeMixin],
   mounted:function(){
+    login({}).then(data=>{
+      console.log('aa')
+    })
     console.log(this.screenWidth)
     // this.swidth=this.screenWidth-20+'px'
   }

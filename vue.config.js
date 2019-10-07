@@ -16,7 +16,7 @@ module.exports = {
             // change xxx-api/login => mock/login
             // detail: https://cli.vuejs.org/config/#devserver-proxy
             '/w/': {
-            target: `http://blogapi.codebear.cn/index.php`,
+            target: `http://localhost:3000/`,//http://blogapi.codebear.cn/index.php
             changeOrigin: true,
             // pathRewrite: {
             //     '^/w': ''

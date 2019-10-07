@@ -2,7 +2,7 @@ import axios from 'axios'
 // console.log(process.env.NODE_ENV)
 /* eslint-disable */
 const API_ROOT = 'http://blogapi.codebear.cn/index.php' //生产环境接口地址
-const API_ROOT_DEV = 'http://blogapi.codebear.cn/index.php' //开发环境接口地址
+const API_ROOT_DEV = 'http://localhost:3000/' //开发环境接口地址
 
 // import { MessageBox, Message } from 'element-ui'
 // import store from '@/store'
@@ -20,7 +20,6 @@ const service = axios.create({
 /* eslint-enable */
 // axios.defaults.baseURL = (process.env.NODE_ENV === 'production' ? API_ROOT : API_ROOT_DEV)
 axios.defaults.headers.Accept = 'application/json'
-console.log(axios.defaults)
 
 //接口分类：'a/'后台管理接口  'w/'前台管理接口
 
